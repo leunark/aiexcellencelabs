@@ -8,7 +8,7 @@ type LogoMarkProps = {
 export const LogoMark = ({ className }: LogoMarkProps) => (
   <img
     src={logoAsset}
-    alt="AI Excellence Lab droplet logo"
+    alt="AI Excellence Labs droplet logo"
     className={cn('h-10 w-10 object-contain', className)}
   />
 );

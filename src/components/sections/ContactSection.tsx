@@ -21,7 +21,7 @@ export const ContactSection = () => {
             </p>
 
             <button
-              onClick={() => window.location.href = 'mailto:info@aiexcellencelab.com'}
+              onClick={() => window.location.href = 'mailto:info@aiexcellencelabs.de'}
               className="inline-flex items-center px-8 py-4 text-base font-semibold text-white bg-primary hover:bg-primary/90 rounded-lg shadow-lg hover:shadow-xl transition-all hover:scale-105 mb-12"
             >
               Book a discovery call
@@ -35,10 +35,10 @@ export const ContactSection = () => {
               <div className="flex items-center justify-center gap-3 text-gray-600 dark:text-muted-foreground">
                 <Mail className="w-5 h-5 text-primary" />
                 <a
-                  href="mailto:info@aiexcellencelab.com"
+                  href="mailto:info@aiexcellencelabs.de"
                   className="text-base hover:text-primary transition-colors"
                 >
-                  info@aiexcellencelab.com
+                  info@aiexcellencelabs.de
                 </a>
               </div>
             </div>

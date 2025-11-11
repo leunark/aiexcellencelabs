@@ -35,7 +35,7 @@ export const HeroSection = () => {
               <div className="inline-flex items-center gap-3 rounded-full bg-white/10 px-6 py-3 text-white/80 shadow-lg ring-1 ring-white/20 backdrop-blur">
                 <LogoMark className="h-8 w-8" />
                 <span className="text-sm font-semibold uppercase tracking-[0.4em] text-white/80">
-                  AI Excellence Lab
+                  AI Excellence Labs
                 </span>
               </div>
             </div>
@@ -60,7 +60,7 @@ export const HeroSection = () => {
 
           <div ref={hero4.ref} className={`reveal ${hero4.isVisible ? 'active' : ''}`}>
             <button
-              onClick={() => window.location.href = 'mailto:info@aicapabilitylab.com'}
+              onClick={() => window.location.href = 'mailto:info@aiexcellencelabs.de'}
               className="inline-flex items-center px-8 py-4 text-base font-semibold text-white bg-primary hover:bg-primary/90 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
             >
               Book a discovery call

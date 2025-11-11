@@ -60,7 +60,7 @@ export const WhoSection = () => {
               Book a discovery call — let's define a program for your organisation.
             </p>
             <button
-              onClick={() => window.location.href = 'mailto:info@aicapabilitylab.com'}
+              onClick={() => window.location.href = 'mailto:info@aiexcellencelabs.de'}
               className="inline-flex items-center px-8 py-4 text-base font-semibold text-primary bg-white hover:bg-gray-50 rounded-lg shadow-lg hover:shadow-xl transition-all"
             >
               Book a discovery call

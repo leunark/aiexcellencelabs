@@ -1,4 +1,4 @@
-# AI Excellence Lab Web App
+# AI Excellence Labs Web App
 
 Modern React + Vite boilerplate for AI-centric marketing sites, dashboards, and internal tooling. It bundles shadcn/ui, Radix primitives, Tailwind CSS, TanStack Query, and TypeScript for a polished developer experience.
 
@@ -28,7 +28,7 @@ npm -v
 
 ```bash
 git clone <your-repo-url>
-cd aiexcellencelab
+cd aiexcellencelabs
 nvm install && nvm use   # optional but recommended
 npm install
 npm run dev              # http://localhost:8080
