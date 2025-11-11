@@ -8,12 +8,21 @@ import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
 
+const getBasePath = () => {
+  if (typeof window === 'undefined') {
+    return import.meta.env.BASE_URL || '/';
+  }
+  return new URL(import.meta.env.BASE_URL || '/', window.location.origin).pathname;
+};
+
+const basePath = getBasePath();
+
 const App = () => (
   <QueryClientProvider client={queryClient}>
     <TooltipProvider>
       <Toaster />
       <Sonner />
-      <BrowserRouter basename={import.meta.env.BASE_URL}>
+      <BrowserRouter basename={basePath}>
         <Routes>
           <Route path="/" element={<Index />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
