@@ -8,35 +8,25 @@ import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
 
-const getBasePath = () => {
-  if (typeof window === 'undefined') {
-    return import.meta.env.BASE_URL || '/';
+const normalizeRouterBase = () => {
+  const base = import.meta.env.BASE_URL || "/";
+
+  if (base === "/" || base === "./") {
+    return "/";
   }
 
-  const defaultBase = import.meta.env.BASE_URL || '/';
-  const ghPagesRepoPath = '/aiexcellencelab/';
-  const hostname = window.location.hostname;
-  const pathname = window.location.pathname;
-
-  if (hostname.endsWith('github.io') && pathname.startsWith(ghPagesRepoPath)) {
-    return ghPagesRepoPath;
-  }
-
-  if (defaultBase === './') {
-    return '/';
-  }
-
-  return defaultBase;
+  return base.replace(/\/+$/, "");
 };
 
-const basePath = getBasePath();
+const basePath = normalizeRouterBase();
+const routerBase = basePath === "/" ? undefined : basePath;
 
 const App = () => (
   <QueryClientProvider client={queryClient}>
     <TooltipProvider>
       <Toaster />
       <Sonner />
-      <BrowserRouter basename={basePath}>
+      <BrowserRouter basename={routerBase}>
         <Routes>
           <Route path="/" element={<Index />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
