@@ -29,7 +29,7 @@ export const Footer = () => {
                 href="mailto:info@aiexcellencelabs.de"
                 className="text-primary hover:text-primary/80 transition-colors"
               >
-                info@aiexcellencelabs.de
+                info@aiexcellencelabs.com
               </a>
             </p>
           </div>
