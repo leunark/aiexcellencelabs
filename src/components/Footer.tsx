@@ -22,7 +22,7 @@ export const Footer = () => {
           </p>
           
           <div className="text-sm text-gray-600 dark:text-muted-foreground space-y-1">
-            <p>AI Excellence Labs (in formation) · Berlin, Germany</p>
+            <p>AI Excellence Labs · Berlin, Germany</p>
             <p>
               contact:{' '}
               <a
